@@ -2,10 +2,8 @@
 mHGN: Multidimensional Heirarchical Graph Neuron is a pattern recognition scheme that uses parallel network centric processing at its core. 
 This repository is about training mHGN network over Apache Spark cluster for recognizing multidimensional patterns in data streams.
 
-## Spark Cluster Setup
-Create a Spark cluster with atleast two worker instances and add Spark_Cluster directory in user directory of all the machines in the cluster.
-
 ## Training mHGN
+Create a Spark cluster with atleast two worker instances and add Spark_Cluster directory in user directory of all the machines in the cluster.
 To train mHGN, place your training dataset in training_files/training_patterns directory of all the nodes as driver program will be deployed on any of the node in the cluster. Next, from master node start all the daemons for Spark with `$ start-all.sh`
 This will launch master node and all the worker nodes in the cluster. Check the status of all the workers with `jps` command.
 
